@@ -1,0 +1,142 @@
+@import "../assets/fonts/outfit/static";
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+}
+
+body {
+    background-color: var(--eggshell);
+    color: var(--wenge-brown);
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--white);
+    width: 700px;
+    margin: 110px auto;
+    border-radius: 30px;
+    padding: 40px;
+}
+
+section {
+    padding: 20px 0;
+}
+
+section:last-child {
+    padding-bottom: 0;
+}
+
+hr {
+    opacity: 0.6;
+}
+
+img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+h1 {
+    font-family: "Young Serif", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--dark-charcoal);
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    font-family: "Young Serif", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--nutmeg);
+}
+
+h3 {
+    color: var(--dark-raspberry);
+    margin: 0;
+}
+
+.preparation {
+    background-color: var(--rose-white);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+ul {
+    margin: 0 20px;
+    padding: 10px 0;
+}
+
+ol {
+    counter-reset: li;
+    list-style: none;
+}
+
+ol > li {
+    position: relative;
+    counter-increment: li;
+}
+
+ol > li::before {
+    position: absolute;
+    content: counter(li) ".";
+    color: var(--nutmeg);
+    font-weight: 700;
+    left: -1.3em;
+}
+
+li {
+    padding: 8px 15px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid var(--eggshell);
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+th {
+    flex: 1;
+    padding-left: 20px;
+    font-weight: 400;
+}
+
+td {
+    flex: 1;
+    color: var(--nutmeg);
+    font-weight: 700;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
