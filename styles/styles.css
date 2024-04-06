@@ -52,7 +52,7 @@ img {
 
 h1 {
     font-family: "Young Serif", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 40px;
     color: var(--dark-charcoal);
     margin: 0;
@@ -66,15 +66,18 @@ h2 {
     color: var(--nutmeg);
 }
 
-h3 {
-    color: var(--dark-raspberry);
-    margin: 0;
-}
-
 .preparation {
     background-color: var(--rose-white);
     padding: 20px;
     border-radius: 10px;
+}
+
+.preparation h2 {
+    color: var(--dark-raspberry);
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 ul {
